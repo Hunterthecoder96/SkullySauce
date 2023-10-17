@@ -1,0 +1,53 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the body and html take full viewport height */
+  font-family: Arial, sans-serif;
+}
+/*header*/
+img{
+  height:100px;
+  width:100px;
+  padding:10px;
+}
+.Header-container{
+  display:flex;
+  background-color: burlywood;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.link{
+  text-decoration: none;
+  padding: 10px;
+  color:black;
+}
+
+/*shop directory */
+.directory-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+}
+.merch-link,
+.sauce-link {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  background-color: #f0f0f0; /* Background color for the squares */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: #333; /* Text color */
+  border: 1px solid #ccc; /* Optional border */
+  border-radius: 10px; /* Optional border radius */
+  transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+}
+.merch-link:hover,
+.sauce-link:hover {
+  background-color: #ddd; /* Hover background color */
+}

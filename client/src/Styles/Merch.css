@@ -1,0 +1,56 @@
+
+.merch-container{
+    display: flex ;
+}
+.product-card {
+    display: flex;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.product-image img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 16px;
+    flex: 1;
+}
+
+.product-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.product-description {
+    font-size: 0.875rem;
+    margin-top: 8px;
+}
+
+.product-price {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.add-to-cart-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #2980b9;
+}
