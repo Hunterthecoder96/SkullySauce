@@ -36,7 +36,7 @@ function App() {
    element={<Home/>}
    />
    <Route
-   path="/merchandise"
+   path="/merch"
    element={<Merch/>}
    />
    <Route 

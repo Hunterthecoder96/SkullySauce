@@ -1,6 +1,11 @@
 
 .merch-container{
     display: flex ;
+    padding-top:90px;
+}
+.Sauce-container{
+    display: flex;
+    padding-top:50px;
 }
 .product-card {
     display: flex;

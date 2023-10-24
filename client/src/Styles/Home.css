@@ -1,0 +1,14 @@
+.home-container{
+    background-image: url("../src/assets/stocksauce.jpg");
+    height:100vh;
+    position:absolute;
+    top:10vh;
+    width:100vw;
+}
+.home-container >h1{
+position:relative;
+color:black;
+top:50px;
+width:50%;
+background-color: white;
+}

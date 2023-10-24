@@ -1,34 +1,20 @@
-import React from "react";
+import React, {useContext,useEffect} from "react";
+import ProductCard from "./ProductCard";
 import "../Styles/Merch.css"
+import{UserContext} from "../Context/UserProvider"
 export default function Merch(){
+    const {getAllMerch,allMerch}=useContext(UserContext)
+
+    useEffect(()=>{
+        getAllMerch()
+    },[])
 
     return(
-        <div className="merch-container">
-
-           <div class="product-card">
-    <div class="product-image">
-        <img  alt="Product Name" />
-    </div>
-    <div class="product-details">
-        <h2 class="product-title">Product Name</h2>
-        <p class="product-description">Product description goes here. Provide key features and details about the product.</p>
-        <p class="product-price">$99.99</p>
-        <button class="add-to-cart-button">Add to Cart</button>
-    </div>
-    
-</div>
-<div class="product-card">
-    <div class="product-image">
-        <img  alt="Product Name" />
-    </div>
-    <div class="product-details">
-        <h2 class="product-title">Product Name</h2>
-        <p class="product-description">Product description goes here. Provide key features and details about the product.</p>
-        <p class="product-price">$99.99</p>
-        <button class="add-to-cart-button">Add to Cart</button>
-    </div>
-</div>
-</div>
-        
+        <div>
+            {allMerch.length && allMerch.map((merch)=>(
+                <ProductCard {...merch} key={merch._id} product={merch}/>
+            ))}
+        </div>
+      
     )
 }

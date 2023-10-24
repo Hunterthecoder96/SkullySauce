@@ -5,26 +5,12 @@ html {
   height: 100%; /* Ensure the body and html take full viewport height */
   font-family: Arial, sans-serif;
 }
-/*header*/
-img{
-  height:100px;
-  width:100px;
-  padding:10px;
-}
+
 .Header-container{
-  display:flex;
-  background-color: burlywood;
-  justify-content: center;
-  align-items: center;
+  position:fixed;
+  width:100%;
+  margin-top:0;
 }
-
-
-.link{
-  text-decoration: none;
-  padding: 10px;
-  color:black;
-}
-
 /*shop directory */
 .directory-container{
   display:flex;
@@ -32,6 +18,8 @@ img{
   align-items: center;
   padding:20px;
 }
+
+
 .merch-link,
 .sauce-link {
   width: 150px; /* Adjust the width as needed */

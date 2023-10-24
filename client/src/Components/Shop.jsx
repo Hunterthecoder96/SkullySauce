@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 export default function Shop(){
@@ -13,11 +14,11 @@ export default function Shop(){
     </div>
   </a>
 
-  <a href="/sauce" className="sauce-link">
+  <Link to="/sauce" className="sauce-link">
     <div>
       <h2>Sauce</h2>
     </div>
-  </a>
+  </Link>
 </div>
     )
 }

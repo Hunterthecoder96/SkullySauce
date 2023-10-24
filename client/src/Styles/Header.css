@@ -1,0 +1,17 @@
+.Header-container{
+    display:flex;
+    background-color: burlywood;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+  }
+  img{
+    height:100px;
+    width:100px;
+    padding:10px;
+  }
+  .link{
+    text-decoration: none;
+    padding: 10px;
+    color:black;
+  }
